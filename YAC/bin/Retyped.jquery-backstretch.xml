@@ -1,0 +1,83 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Retyped.jquery-backstretch</name>
+    </assembly>
+    <members>
+        <member name="P:Retyped.jquery_backstretch.JQueryBackStretch.BackStretchOptions.centeredX">
+            <summary>
+            The ratio of the width/height of the image doesn't always jive with the
+            width/height of the window. This parameter controls whether or not we
+            center the image on the X axis to account for the discrepancy.
+            </summary>
+        </member>
+        <member name="P:Retyped.jquery_backstretch.JQueryBackStretch.BackStretchOptions.centeredY">
+            <summary>
+            This parameter controls whether or not we center the image on the Y axis
+            to account for the aforementioned discrepancy.
+            </summary>
+        </member>
+        <member name="P:Retyped.jquery_backstretch.JQueryBackStretch.BackStretchOptions.duration">
+            <summary>
+            This is the speed at which the image will fade in. Integers in
+            milliseconds are accepted, as well as standard jQuery speed strings
+            (slow, normal, fast).
+            </summary>
+        </member>
+        <member name="P:Retyped.jquery_backstretch.JQueryBackStretch.BackStretchOptions.fade">
+            <summary>
+            The amount of time in between slides, when using Backstretch as a
+            slideshow, expressed as the number of milliseconds.
+            </summary>
+        </member>
+        <member name="M:Retyped.jquery_backstretch.JQueryBackStretch.BackStretch.resize">
+            <summary>
+            This method is called automatically when the container (window or
+            block-level element) is resized, however you can always call this
+            manually if needed.
+            </summary>
+        </member>
+        <member name="M:Retyped.jquery_backstretch.JQueryBackStretch.BackStretch.show(System.Double)">
+            <summary>
+            Jump to the slide at a given index, where n is the number of the
+            image that you'd like to display. Slide number starts at 0.
+            </summary>
+            <param name = "newIndex"></param>
+        </member>
+        <member name="M:Retyped.jquery_backstretch.JQueryBackStretch.BackStretch.next">
+            <summary>
+            Advance to the next image in a slideshow.
+            </summary>
+        </member>
+        <member name="M:Retyped.jquery_backstretch.JQueryBackStretch.BackStretch.prev">
+            <summary>
+            Display the previous image in a slideshow.
+            </summary>
+        </member>
+        <member name="M:Retyped.jquery_backstretch.JQueryBackStretch.BackStretch.pause">
+            <summary>
+            Pause the slideshow.
+            </summary>
+        </member>
+        <member name="M:Retyped.jquery_backstretch.JQueryBackStretch.BackStretch.resume">
+            <summary>
+            Resume a paused slideshow.
+            </summary>
+        </member>
+        <member name="M:Retyped.jquery_backstretch.JQueryBackStretch.BackStretch.destroy">
+            <summary>
+            Destroy the Backstretch instance. Optionally, you can pass in a Boolean
+            parameter, preserveBackground, to determine whether or not you'd like
+            to keep the current image stretched as the background image.
+            </summary>
+        </member>
+        <member name="M:Retyped.jquery_backstretch.JQueryBackStretch.BackStretch.destroy(System.Boolean)">
+            <summary>
+            Destroy the Backstretch instance. Optionally, you can pass in a Boolean
+            parameter, preserveBackground, to determine whether or not you'd like
+            to keep the current image stretched as the background image.
+            </summary>
+            <param name = "preserveBackground"></param>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,1154 @@
+﻿
+/***********Framework***************/
+
+@font-face {
+    font-family: 'Mainfont';
+    src: url('../fonts/afsaneh.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'alhor';
+    src: url('../fonts/alhor.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Alameen';
+    src: url('../fonts/Alameen.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'ANasr';
+    src: url('../fonts/ANasr.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'KFGQPC';
+    src: url('../fonts/KFGQPC.otf') format('opentype');
+}
+@font-face {
+    font-family: 'Droid';
+    src: url('../fonts/Droid.ttf') format('truetype');
+}
+body {
+    /*padding-top: 50px;*/
+    padding-bottom: 20px;
+    /*height:5000px;*/
+    background-color: #e2e2e2;
+    font-family: Droid;
+}
+.header .headerRight {
+    float: right;
+    width: 50%;
+}
+.header .headerLeft {
+    /*float: left;*/
+    width:50%;
+}
+.header img {
+    position: relative;
+    width: 100px;
+    height: 100px;
+}
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+.header {
+    background-color: #f1f1f1;
+    padding: 30px;
+    text-align: center;
+}
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    direction: rtl;
+    display: block;
+    z-index: 50;
+    margin: 0;
+    padding:0;
+}
+
+    .navbar a {
+        float: right;
+        font-size: 14px;
+        color: #bebcbc;
+        text-align: center;
+        padding: 10px 10px;
+        text-decoration: none;
+        font-family: Droid;
+        font-weight: bolder;
+    }
+
+.dropdown {
+    float: right;
+    overflow: hidden;
+}
+
+    .dropdown .dropbtn {
+        font-size: 14px;
+        font-weight: bolder;
+        border: none;
+        outline: none;
+        color: #bebcbc;
+        padding: 10px 10px;
+        background-color: inherit;
+        font-family: inherit;
+        margin: 0;
+        font-family: Droid;
+    }
+
+    .navbar a:hover, .dropdown:hover .dropbtn {
+        background-color: red;
+        color:white;
+    }
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index:20;
+}
+
+    .sticky + .content {
+        padding-top: 60px;
+    }
+.dropdown-content {
+    display: none;
+    position: fixed;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+    .dropdown-content a {
+        float: none;
+        color: black;
+        padding: 10px 10px;
+        text-decoration: none;
+        display: block;
+        text-align: right;
+        font-family: Droid;
+        font-size: 14px;
+    }
+
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+/* The progress container (grey background) */
+.progress-container {
+    width: 100%;
+    height: 8px;
+    background: #ccc;
+    position: fixed;
+}
+
+/* The progress bar (scroll indicator) */
+.progress-bar {
+    height: 8px;
+    background: #4caf50;
+    width: 0%;
+}
+/**********************************************/
+
+.mySlides {
+    display: none
+}
+
+img {
+    vertical-align: middle;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+    max-height: 480px;
+    z-index:-20;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover, .next:hover {
+        background-color: rgba(0,0,0,0.8);
+    }
+
+/* Caption text */
+.text {
+    color: #f2f2f2;
+    font-size: 14px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+    .active, .dot:hover {
+        background-color: #717171;
+    }
+
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+    .prev, .next, .text {
+        font-size: 11px
+    }
+}
+
+/*******************************************/
+.carousel {
+    height: 530px;
+    overflow: hidden;
+    width: 100%;
+    z-index: 1;
+}
+
+.carousel-inner {
+    height: 100% !important;
+}
+
+.carousel-item {
+    height: 100vh;
+    min-height: 300px;
+    background: no-repeat center center scroll;
+    /*-webkit-background-size:cover;*/
+    background-size: cover;
+}
+
+.carousel-caption {
+    bottom: 390px;
+    display: block;
+}
+
+.carousel-caption > h5.carcapahead {
+    font-size: 50px;
+    text-transform: uppercase;
+    /*letter-spacing: 2px;*/
+    margin-top: 20px;
+    font-family: INFECTED;
+    text-align: center;
+    width: 70%;
+    position: relative;
+    top: 0;
+    right: -15%;
+}
+
+.carousel-caption > h5.carcapahead:hover, .carcapahead:focus {
+    color: #fe0003;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+    cursor: pointer;
+    border-radius: 10px;
+    /*box-shadow: 0 0 10px #fe0003, 0 0 40px #fe0003, 0 0 80px #fe0003;*/
+}
+
+.carousel-caption span {
+    font-size: 16px;
+    font-family: Jullianne;
+    position: relative;
+    bottom: -146px;
+}
+
+.carousel-caption p {
+    font-size: 25px;
+    text-transform: lowercase;
+    /*letter-spacing: 2px;*/
+    font-family: Rush-Hour;
+    margin: 0;
+}
+
+.carousel-caption p:hover {
+}
+
+.carousel-caption a.carcapafoot {
+    text-transform: uppercase;
+    padding: 10px 30px;
+    display: inline-block;
+    color: #fff;
+    background: transparent;
+    padding: 5px 0;
+    width: 180px;
+    border: 2px solid #fe0003;
+    margin: 2% 2% 1% 1%;
+    border-radius: 10px;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+    font-size: 20px;
+    font-family: mainfont;
+    color: #fff;
+    background-color: inherit;
+}
+
+.carousel-caption a.carcapafoot:hover {
+    color: #fe0003;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+    cursor: pointer;
+    /*border: 2px solid #fff;*/
+    border-radius: 10px;
+    box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
+}
+
+.carousel-caption a span {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg,transparent,#fe0003);
+}
+
+.carousel-control-next, .carousel-control-prev {
+    position: absolute;
+    top: 45%;
+    bottom: 0;
+    z-index: 1;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 15%;
+    color: #fff;
+    text-align: center;
+    opacity: .5;
+    transition: opacity .15s ease;
+    height: 100px;
+}
+
+
+/***************News***************/
+boddy home-card homecardcarinner
+.boddy home-card {
+    position: relative;
+    top: 125px;
+}
+
+.home-card.container.body-content {
+    padding-top: 5%;
+}
+
+.row.Card {
+    margin: 5% 0%;
+}
+
+.carouselCard {
+    height: 235px !important;
+    overflow: hidden;
+    width: 100%;
+}
+
+.carousel-inner .carousel-item {
+}
+
+.carousel-inner .carousel-item img {
+    height: 530px;
+    max-height: 530px;
+}
+
+.carouselcaption.d-none.d-md-block {
+    position: absolute;
+    top: -25px;
+}
+
+.carousel-inner .carousel-item.homecardcaritem > div h5 {
+    font-size: 20px;
+    text-transform: uppercase;
+    /*letter-spacing: 2px;*/
+    margin-top: 20px;
+    font-family: BoutrosNewsH1-Bold;
+    color: #fe0003;
+}
+
+.carousel-inner .carousel-item p {
+}
+
+.homecardnext, .homecardprev {
+    position: absolute;
+    top: 20%;
+    bottom: 0;
+    z-index: 1;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 15%;
+    color: #fff;
+    text-align: center;
+    opacity: .5;
+    transition: opacity .15s ease;
+    height: 100px;
+}
+/***************************************/
+* {
+    box-sizing: border-box;
+}
+
+
+/* Float four columns side by side */
+.column {
+    float: right;
+    width: 50%;
+    padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding in columns */
+.row {
+    margin: 0;
+    direction:rtl;
+}
+
+    /* Clear floats after the columns */
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+/* Style the counter cards */
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+    padding: 16px;
+    text-align: center;
+    background-color: #f1f1f1;
+}
+
+/* Responsive columns - one column layout (vertical) on small screens */
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+    }
+}
+
+/****************************************************/
+.row .member {
+    padding: 5px 5px;
+    text-align: center;
+    z-index: -22;
+    background-color:#2196f3
+}
+.member h3 {
+    font-size: 30px;
+    text-transform: uppercase;
+    /*letter-spacing: 2px;*/
+    margin: 20px;
+    color: #747171;
+    text-align: center;
+    font-family: alhor;
+    font-weight: bold;
+    z-index: -22;
+}
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 220px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+    z-index: -22;
+}
+
+.title {
+    color: grey;
+    font-size: 18px;
+}
+
+button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+}
+
+a {
+    text-decoration: none;
+    font-size: 22px;
+    color: black;
+}
+
+    button:hover {
+        /*opacity: 0.7;*/
+    }
+
+
+    .row.member .mohafza {
+        width: 100%;
+        height: 200px;
+    }
+
+
+.flip-card {
+    background-color: transparent;
+    width: 220px;
+    height: 220px;
+    perspective: 1000px;
+    position: relative;
+    right: 25%;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    z-index: -22;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.flip-card-front {
+    background-color: #bbb;
+    color: black;
+}
+
+.flip-card-back {
+    background-color: #2980b9;
+    color: white;
+    transform: rotateY(180deg);
+}
+.flip-card-back h1{
+    font-family:alhor;
+    font-size:40px;
+    padding-top:25px;
+}
+.flip-card-back a{
+    font-family:alhor;
+    font-size:20px;
+    padding-top:5px;
+}
+.flip-card-back p{
+     font-family:alhor;
+    font-size:20px;
+    padding-top:5px;
+}
+
+/********************************************/
+.mohafezword{
+    height:400px;
+    overflow:hidden;
+}
+
+.mohafezword img {
+    position: absolute;
+    background: center;
+    background-position-x: center;
+    background-position-y: center;
+    background-position: center;
+    background-repeat: no-repeat,repeat;
+    background-size: cover;
+    height: 500px;
+    width: 100%;
+    opacity: 0.5
+}
+.mohafezword h3 {
+    font-size: 30px;
+    text-transform: uppercase;
+    /*letter-spacing: 2px;*/
+    margin: 20px;
+    color: black;
+    text-align: center;
+    font-family: alhor;
+    font-weight: bold;
+    z-index: -22;
+}
+.mohafezword a {
+    font-size: 25px;
+    text-transform: uppercase;
+    /*letter-spacing: 2px;*/
+    margin: 20px;
+    color: #000;
+    text-align: right;
+    font-family: alhor;
+    font-weight: bold;
+    z-index: 2;
+    float: right;
+    width:100%;
+
+}
+.mohafezword p {
+    font-size: 20px;
+    text-transform: uppercase;
+    /*letter-spacing: 2px;*/
+    margin: 20px;
+    color: #767676;
+    text-align: center;
+    font-family: Arial;
+    font-weight: bold;
+    z-index: 2;
+    text-align: justify;
+    padding: 0px 55px;
+    width: 90%;
+}
+.mohafezword p.signature{
+    text-align:left;
+    font-family:ConiScriptSSK;
+    margin: 0;
+    padding: 0;
+}
+/****************************************/
+.cardservice {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 100%;
+    margin-top:2%;
+}
+.membership h3 {
+    font-size: 30px;
+    text-transform: uppercase;
+    /*letter-spacing: 2px;*/   
+    color: #fff;
+    text-align: center;
+    font-family: alhor;
+    font-weight: bold;
+    z-index: -22;
+    margin-top:2%;
+    margin-bottom:5%;
+}
+.cardservice:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.cardservice {
+    padding: 2px 16px;
+    margin-top: 10%
+}
+.cardservice h4 {
+    font-size: 16px;
+    text-transform: uppercase;
+    /*letter-spacing: 2px;*/
+    margin:10px 0px;
+    color: black;
+    text-align: center;
+    font-family: alhor;
+    font-weight: bold;
+    z-index: -22;
+}
+.cardservice p{
+    font-size: 14px;
+    text-transform: uppercase;
+    /*letter-spacing: 2px;*/
+    color: #747171;
+    text-align: center;
+    font-family: Arial;
+    font-weight: bold;
+    z-index: -22;
+}
+
+/****************************************/
+.TecnoSupport {
+    padding:20px 60px;
+    
+}
+ .TecnoSupport h3{
+     font-family: alhor;
+    text-align: center;
+    margin-top:5px;
+    
+ }
+.TecnoSupport h4 {
+    font-family: alhor;
+    text-align: right;
+}
+.TecnoSupport p {
+    text-align: right;
+    padding-right:20px;
+}
+.TecnoSupport p span {
+  color:#2dc60d;
+}
+/*****************************************/
+
+* {
+    box-sizing: border-box;
+}
+label{
+    text-align:right;
+    display:block;
+}
+/* Style inputs */
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    margin-top: 5px;
+    margin-bottom: 16px;
+    resize: vertical;
+    display: inherit;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+    input[type=submit]:hover {
+        background-color: #45a049;
+    }
+
+/* Style the container/contact section */
+.container {
+    /*border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 10px;*/
+}
+
+/* Create two columns that float next to eachother */
+.column {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+    padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+}
+/****************************************/
+.mt-3{
+
+}
+.content.text-uppercase.font-weight-bold{
+    text-align:right;
+}
+.contentP {
+    text-align: justify;
+}
+.contentP a{
+    text-align:right;
+    font-size:14px;
+    text-wrap:avoid
+}
+.contentP a:hover{
+    color:#fe0003;
+    cursor:pointer;
+    list-style-type:none;
+    text-decoration:none;
+}
+.mb-0 {
+    font-family: alhor;
+    font-size: 25px;
+    text-align: right;
+    color:white;
+}
+.social{
+
+}
+.social a{
+    font-size:30px;
+}
+.fb-ic i {
+    color: #2980b9
+}
+.tw-ic i{
+    color:#2196f3
+}
+.li-ic i {
+    color: #2196f3
+}
+.ins-ic i{
+    color:#f67a04
+}
+.gplus-ic i{
+    color:#fe0003
+}
+    .fb-ic i:hover, .tw-ic i:hover, .li-ic i:hover, .ins-ic i:hover, .gplus-ic i:hover{
+        cursor:pointer;
+    }
+
+.deep-purple {
+    position: absolute;
+    right: 0;
+}
+/****************************************************/
+.row.News {
+  padding:  5px 50px;
+}
+.row.News section{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin-top:2%;
+}
+.row.News .col-md-8.Text{
+    text-align:right;
+   padding: 5px 15px;
+}
+.row.News .col-md-8.Text h3{
+    font-family:alhor;
+    text-align:center;
+}
+.row.News .col-md-8.Text a{
+    font-size:18px;
+    text-align:right;
+    font-family:alhor;
+    color:#747171
+}
+.row.News .col-md-8.Text p{
+    font-size:14px;
+    text-align:justify;
+    padding-top:2%;
+    padding-bottom:2%;
+}
+.row.News .col-md-4.img{
+
+}
+.row.News .col-md-4.img img{
+    width:100%;
+    margin-top:3%;
+}
+
+
+
+
+
+
+
+
+
+
+/******************************
+ 6- Services
+*******************************/
+.services {
+    position: relative;
+    right: 13%;
+    margin-bottom: 5%;
+}
+
+    .services .services-overlay {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+        .services .services-overlay .overlay-body {
+            background: url('/img/tm-bg-slide-1.jpg') fixed center center;
+            width: 340px;
+            height: 340px;
+            overflow: hidden;
+            margin: auto;
+            border-radius: 50%;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+    .services .overlay-body h2 {
+        z-index: 1;
+        font-size: 28px;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-family:Droid;
+        color:white;
+    }
+
+    .services .services-overlay .overlay-body:after {
+        content: " ";
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.45);
+    }
+
+    .services .services-body .service {
+        display: flex;
+    }
+
+    .services .service .service-sign {
+        width: 100px;
+        height: 100px;
+        line-height: 100px;
+        text-align: center;
+        border-radius: 50%;
+        background-color: #bbb;
+        color: var(--main-color);
+        font-size: 40px;
+    }
+        .services .service .service-sign img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+        }
+    
+    .services .service-1 .service-sign, .services .service-3 .service-sign {
+        margin-left: 25px;
+    }
+
+    .services .service-2 .service-sign, .services .service-4 .service-sign {
+        margin-right: 80px;
+    }
+
+    .services .service-3 {
+        margin-right: 10px;
+    }
+
+    .services .service-4 {
+        margin-left: 60px;
+    }
+
+    .services .service .service-info {
+        margin-top: 15px;
+    }
+
+    .services .service .service-info p {
+        font-size: 14px;
+        color: black;
+    }
+
+@media (min-width: 768px) {
+    .services .services-body .service {
+        width: 80%;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+
+    .services .service .service-sign {
+        width: 200px;
+    }
+
+    .services .service .service-info {
+        margin-top: 0px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .services .services-overlay .overlay-body {
+        width: 350px;
+        height: 350px;
+    }
+
+    .services .service-3 {
+        margin-right: 105px;
+    }
+
+    .services .service-4 {
+        margin-left: 105px;
+    }
+
+    .services .service .service-sign {
+        width: 220px;
+        font-size: 35px;
+        height: 80px;
+        line-height: 80px;
+    }
+
+    .services .service .service-info {
+        margin-top: 0px;
+    }
+
+        .services .service .service-info h5 {
+            font-size: 16px;
+        }
+
+        .services .service .service-info p {
+            font-size: 12px;
+        }
+}
+
+@media (max-width: 767px) {
+    .services .services-overlay .overlay-body {
+        background-image: none;
+        background-color: var(--sections-color);
+        width: 100%;
+        height: 100%;
+        border-radius: 0px;
+        align-items: flex-start;
+        padding-top: 70px;
+    }
+
+        .services .services-overlay .overlay-body:after {
+            background-color: transparent;
+        }
+
+    .services .services-body {
+        margin-top: 50px;
+    }
+
+        .services .services-body .service {
+            margin: 50px 0 0 0 !important;
+            border: 1px solid #aaa;
+            border-radius: 5px;
+            float: none !important;
+            padding: 15px 15px 2px;
+            text-align: left !important;
+        }
+
+            .services .services-body .service:hover {
+                background: linear-gradient(to right, var(--main-color), transparent);
+            }
+
+            .services .services-body .service .service-sign {
+                order: 1;
+                margin: 0 15px 0 0 !important;
+                font-size: 35px;
+                width: 180px;
+                height: 80px;
+                line-height: 80px;
+            }
+
+            .services .services-body .service .service-info {
+                order: 2;
+                margin: 0 !important;
+            }
+
+    .services .service .service-info h5 {
+        font-size: 16px;
+    }
+
+    .services .service .service-info p {
+        font-size: 12px;
+    }
+}
+
+@media (min-width: 395px) and (max-width: 767px) {
+    .services .services-body .service {
+        padding: 20px 10px 20px 15px !important;
+    }
+
+        .services .services-body .service .service-sign {
+            width: 180px !important;
+            height: 100px !important;
+            line-height: 100px !important;
+            font-size: 40px !important;
+        }
+
+    .services .service .service-info h5 {
+        margin-top: 20px !important;
+    }
+}
+

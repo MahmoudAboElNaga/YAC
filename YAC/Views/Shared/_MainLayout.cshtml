@@ -1,0 +1,189 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+    <link href="~/Content/Portofilio/animate.css" rel="stylesheet" />
+    <link href="~/Content/font-awesome.css" rel="stylesheet" />
+
+    <link href="~/Content/Site.css" rel="stylesheet" />
+    <script src="/js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <title>@ViewBag.Title</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    <script>
+        $(document).ready(function () {
+            $("#myCarousel").carousel({
+                interval: 3000
+            });
+            $('.dropdown-submenu a.test').on("click", function (e) {
+                $(this).next('ul').toggle();
+                e.stopPropagation();
+                e.preventDefault();
+            });
+
+            $(document).on('mouseover', '.container-fluida .column', function () {
+                $(this).addClass('active').siblings().removeClass('active');
+            }
+            )
+        });
+    </script>
+</head>
+<body>
+
+    <div class="header">
+        <div class="headerRight">
+            <img src="/img/logoyac.jpg" />
+        </div>
+        <div class="headerLeft">
+            <img src="/img/logo.jpg" />
+
+        </div>
+    </div>
+    <div class="">
+        <div class="navbar" id="navbar">
+            <div class="container" style="display:block;">
+
+
+                <a href="/Home/Home">الرئيسية</a>
+                <a href="/Home/News">الاخبار</a>
+
+                <!--الهيكل التنظيمي-->
+                <div class="dropdown">
+                    <button class="dropbtn">
+                        الهيكل التنظيمي
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="/Mohafza/Mohafez">المحافظ</a>
+                        <a href="#">نواب المحافظ</a>
+                        <a href="#">الأمين العام</a>
+                        <a href="#">الأمين المساعد</a>
+                        <a href="#">الأمانة العامة</a>
+                    </div>
+                </div>
+                <!--التحول الرقمي-->
+                <div class="dropdown">
+                    <button class="dropbtn">
+                        التحول الرقمي
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="/TechnoSupport/TechnoSupport">الدعم التكنولوجي والتطبيقات</a>
+                        <a href="#">التواصل الأجتماعي</a>
+                        <a href="#">التنمية الإدارية</a>
+                        <a href="#">مكافحة الفساد</a>
+                    </div>
+                </div>
+                <!--ألعمل العام-->
+                <div class="dropdown">
+                    <button class="dropbtn">
+                        العمل العام
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="#">خريجي الأكاديمية</a>
+                        <a href="#">الأحزاب</a>
+                        <a href="#">النقابات</a>
+                        <a href="#">الجمعيات</a>
+                        <a href="#">المؤسسات</a>
+                        <a href="#">المبادرات</a>
+                        <a href="#">الأعلام</a>
+
+                    </div>
+                </div>
+                <!--التنمية المحلية-->
+                <div class="dropdown">
+                    <button class="dropbtn">
+                        التنمية المحلية
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="/MID/MID">الخدمات المحلية</a>
+                        <a href="#">التجميل والتنسيق</a>
+                        <a href="#">المشروعات التنموية</a>
+                        <a href="#">البيئة</a>
+
+                    </div>
+                </div>
+                <!--بناء الانسان-->
+                <div class="dropdown">
+                    <button class="dropbtn">
+                        بناء الانسان
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="#">الثقافة</a>
+                        <a href="#">الصحة</a>
+                        <a href="#">التعليم</a>
+                        <a href="#">الرياضة</a>
+                        <a href="#">التنمية البشرية</a>
+                    </div>
+                </div>
+                <!--الإجتماعي-->
+                <div class="dropdown">
+                    <button class="dropbtn">
+                        الاجتماعي
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="#">المبادرات المجتمعية</a>
+                        <a href="#">دور الرعاية</a>
+                        <a href="#">التضامن الاجتماعي</a>
+                        <a href="#">المجتمع المدني</a>
+
+                    </div>
+                </div>
+                <!--الاقتصادي-->
+                <div class="dropdown">
+                    <button class="dropbtn">
+                        الأقتصادي
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="#">السياحة والأثار</a>
+                        <a href="#">الاستثمار والتمويل</a>
+                        <a href="#">الزراعة</a>
+                        <a href="#">الصناعة</a>
+                        <a href="#">الطاقة</a>
+                    </div>
+                </div>
+            </div>
+            <div class="pull-left" style="padding-left: 5%;">
+                <a href="#" class="pull-left">دخول</a>
+                <a href="#" class="pull-left">حساب جديد</a>
+            </div>
+
+        </div>
+        @*<div class="progress-container">
+                <div class="progress-bar" id="myBar"></div>
+            </div>*@
+    </div>
+
+    <div>
+        @RenderBody()
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+
+<script src="/lib/jquery-3.5.1.min.js"></script>
+<script src="/lib/bootstrap.min.js"></script>
+<script src="/lib/custom.js"></script>
+<script src="/lib/jquery-migrate-3.0.1.min.js"></script>
+<script src="/lib/jquery.waypoints.min.js"></script>
+<script src="/lib/jquery.stellar.min.js"></script>
+<script src="/lib/owl.carousel.min.js"></script>
+<script src="/lib/aos.js"></script>
+<script src="/lib/scrollax.min.js"></script>
+<script src="/lib/main.js"></script>
+
+
+    <script src="~/Scripts/JavaScript.js"></script>
+</body>
+</html>

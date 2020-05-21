@@ -1,0 +1,495 @@
+﻿
+@{
+    ViewBag.Title = "Home";
+    Layout = "~/Views/Shared/_MainLayout.cshtml";
+}
+
+<!----------------------------------------->
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+
+    <ol class="carousel-indicators">
+
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="7"></li>
+    </ol>
+    <div class="carousel-inner">
+
+        <div class="carousel-item active">
+            <img src="/img/s1.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <h5 class="animated swing carcapahead" style="animation-delay:0.5s ">المجلس الاستشاري للشباب</h5>
+                <p class="animated swing carcapphead" style="animation-delay:1s ">يعتبر المجلس الاستشاري للشباب نموذج مصغر للبرنامج الرئاسي لتأهيل الشباب</p>
+                <a class="animated swing carcapafoot" style="animation-delay:1.5s ">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    مزيد من التفاصيل
+                </a>
+
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="/img/s2.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <h5 class="animated fadeInDownBig carcapahead" style="animation-delay:0.5s ">التأهيل والتمكين</h5>
+                <p class="animated fadeInDownBig carcapphead" style="animation-delay:1s ">مبادرة التأهيل والتمكين لتأهيل الشباب وتمكينهم لمساعدة الرؤساء</p>
+                <a class="animated fadeInDownBig carcapafoot" style="animation-delay:1.5s ">مزيد من التفاصيل</a>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="/img/s3.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <h5 class="animated flipInX carcapahead" style="animation-delay:0.5s ">ابداء الان</h5>
+                <p class="animated flipInY carcapphead" style="animation-delay:1s ">يمكنك الأن البدء فى التجسيل</p>
+                <a class="animated flipInX carcapafoot" style="animation-delay:1.5s ">اشتراك الأن</a>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="/img/s4.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <h5 class="animated flipInX carcapahead" style="animation-delay:0.5s ">مواعيد الاختبارات والتقديم</h5>
+                <p class="animated flipInY carcapphead" style="animation-delay:1s ">يمكنك الان معرفة مواعيد الاختبارات واماكن تقديم الملفات</p>
+                <a class="animated flipInX carcapafoot" style="animation-delay:1.5s ">مزيد من التفاصيل</a>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="/img/s5.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <h5 class="animated flipInX carcapahead" style="animation-delay:0.5s ">اجتماع الاول للمجلس الاستشاري</h5>
+                <p class="animated flipInY carcapphead" style="animation-delay:1s ">اجتمع محافظ بني سويف بمحور التنمية المحلية ومحور الاقتصادي</p>
+                <a class="animated flipInX carcapafoot" style="animation-delay:1.5s ">مزيد من التفاصيل</a>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="/img/s6.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                @*<h5 class="animated flipInX carcapahead" style="animation-delay:0.5s ">مواعيد الاختبارات والتقديم</h5>
+                    <p class="animated flipInY carcapphead" style="animation-delay:1s ">يمكنك الان معرفة مواعيد الاختبارات واماكن تقديم الملفات</p>
+                    <a class="animated flipInX carcapafoot" style="animation-delay:1.5s ">مزيد من التفاصيل</a>*@
+            </div>
+        </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>
+<!----------------------------------------->
+
+<div class="row member">
+    @*<img src="/img/bgg/bgg3.png" style="position:absolute; z-index:-55;height: 80%;width: 100%;top: 100%;" />*@
+
+    <div class="col-md-12">
+        <h3>الهيكل التنظيمي</h3>
+    </div>
+    <!-- Start Services -->
+    <section class="services section-bg" id="services">
+        <div class="container">
+            <!-- service banner -->
+            <div class="services-overlay">
+                <div class="overlay-body">
+                    <h2>الهيكل التنظيمي</h2>
+                </div>
+            </div>
+            <!-- service body -->
+            <div class="services-body">
+                <div class="row">
+
+                    <!-- service 1 -->
+                    <div class="col-12 col-md-6">
+                        <div class="service service-1 text-right float-right mr-4">
+                            <div class="service-sign order-2"><img src="/img/hany.jpg" /></div>
+                            <div class="service-info order-1">
+                                <h5>محمد هاني غنيم</h5>
+                                <p>محافظ بني سويف / رئيس الملجس الاستشاري</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- service 2 -->
+                    <div class="col-12 col-md-6">
+                        <div class="service service-2 ml-4">
+                            <div class="service-sign"><img src="/img/male.jpeg" /></div>
+                            <div class="service-info">
+                                <h5>محمد علي جبر</h5>
+                                <p>الأمين العام</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- service 3 -->
+                    <div class="col-12 col-md-6">
+                        <div class="service service-3 text-right float-right mt-4">
+                            <div class="service-sign order-2"><img src="/img/salama.jpg" /></div>
+                            <div class="service-info order-1">
+                                <h5>عاصم سلامة</h5>
+                                <p>نائب محافظ بني سويف / نائب رئيس المجلس الاستشاري</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- service 4 -->
+                    <div class="col-12 col-md-6">
+                        <div class="service service-4 mt-4 float-left">
+                            <div class="service-sign"><img src="/img/female.png" /></div>
+                            <div class="service-info">
+                                <h5>هند احمد</h5>
+                                <p>الأمين العام المساعد</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- service 5 -->
+                    <div class="col-12 col-md-6">
+                        <div class="service service-1 text-right float-right mr-4 mt-4">
+                            <div class="service-sign order-2"><img src="/img/habsh.jpeg" /></div>
+                            <div class="service-info order-1">
+                                <h5>بلال حبش</h5>
+                                <p>نائب محافظ بني سويف / نائب رئيس المجلس الاستشاري</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- service 6 -->
+                    <div class="col-12 col-md-6">
+                        <div class="service service-2 ml-4 mt-4">
+                            <div class="service-sign"><img src="/img/teamwork.jpg" /></div>
+                            <div class="service-info">
+                                <h5>الأمانة العامة</h5>
+                                <p>منسقين المحاور</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section><!-- End Services -->
+    <!-- Start Works -->
+
+</div>
+
+<!-----------------Start mohafezword------------------------>
+@*<img src="/img/bgg/bgg4.png"style="z-index: -55;position: absolute;width: 100%;height: 70%;" />*@
+
+<div class="row mohafezword">
+
+    <div class="col-md-12">
+        <h3>كلمة السيد المحافظ</h3>
+        <a>الاجتماع الأول للمجلس الاستشاري محور التنمية المحلية والمحور الاقتصادي</a>
+        <p>أفضل شئ يدعوا للسعادة الحرص الذي وجده من شباب بني سويف جميعهم ، وحبهم  لبلدهم  ، والانتماء لوطنهم الكبير مصر، وحرصهم بأن يشاركوا ويقتطعوا جزءا من وقتهم للمساهمة في تنفيذ مقترح تنموي يعود على أهالينا بالخير والتنمية </p>
+        <p>المجلس الاستشاري للشباب هو كيان حاولنا تكوينه ليصبح نافذة وقناة متاحة لكل شباب المحافظة وليس للشباب الذين تم اختيارهم فقط ، فمن له فكرة مدروسة من كل الجوانب  سواء صاحب المقترح من المجلس أو خارجه سيتم طرحها بالمجلس وتحديد فريق عمل متكامل يقوم على تنفيذها ،وسيكون صاحب الفكرة شريك دائم في التنفيذ حتى تخرج الفكرة إلى مشروع </p>
+        <p class="signature">محمد هاني غنيم</p>
+    </div>
+</div>
+
+<!-----------------End mohafezword------------------------>
+
+<!-------------------Start MemberShip---------------------->
+<div class="row membership" style="margin-bottom:2%;margin-top:2%;">
+    <img src="/img/bgg/bgg11.png" style="z-index: -55;position: absolute;width: 100%;height: 25%;" />
+
+    <div class="col-md-12">
+        <h3>أعضاء المجلس الاستشاري</h3>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2">
+                <div class="cardservice">
+                    <img src="/img/img_avatar.png" alt="Avatar" style="width:100%">
+                    <div class="container">
+                        <h4><b>محمود ابوالنجا</b></h4>
+                        <p>مهندس شبكات وبرمجيات</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="cardservice">
+                    <img src="/img/img_avatar.png" alt="Avatar" style="width:100%">
+                    <div class="container">
+                        <h4><b>محمود ابوالنجا</b></h4>
+                        <p>مهندس شبكات وبرمجيات</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="cardservice">
+                    <img src="/img/img_avatar.png" alt="Avatar" style="width:100%">
+                    <div class="container">
+                        <h4><b>محمود ابوالنجا</b></h4>
+                        <p>مهندس شبكات وبرمجيات</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="cardservice">
+                    <img src="/img/img_avatar.png" alt="Avatar" style="width:100%">
+                    <div class="container">
+                        <h4><b>محمود ابوالنجا</b></h4>
+                        <p>مهندس شبكات وبرمجيات</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="cardservice">
+                    <img src="/img/img_avatar.png" alt="Avatar" style="width:100%">
+                    <div class="container">
+                        <h4><b>محمود ابوالنجا</b></h4>
+                        <p>مهندس شبكات وبرمجيات</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="cardservice">
+                    <img src="/img/img_avatar.png" alt="Avatar" style="width:100%">
+                    <div class="container">
+                        <h4><b>محمود ابوالنجا</b></h4>
+                        <p>مهندس شبكات وبرمجيات</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-2">
+                <div class="cardservice">
+                    <img src="/img/img_avatar.png" alt="Avatar" style="width:100%">
+                    <div class="container">
+                        <h4><b>محمود ابوالنجا</b></h4>
+                        <p>مهندس شبكات وبرمجيات</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="cardservice">
+                    <img src="/img/img_avatar.png" alt="Avatar" style="width:100%">
+                    <div class="container">
+                        <h4><b>محمود ابوالنجا</b></h4>
+                        <p>مهندس شبكات وبرمجيات</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="cardservice">
+                    <img src="/img/img_avatar.png" alt="Avatar" style="width:100%">
+                    <div class="container">
+                        <h4><b>محمود ابوالنجا</b></h4>
+                        <p>مهندس شبكات وبرمجيات</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="cardservice">
+                    <img src="/img/img_avatar.png" alt="Avatar" style="width:100%">
+                    <div class="container">
+                        <h4><b>محمود ابوالنجا</b></h4>
+                        <p>مهندس شبكات وبرمجيات</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="cardservice">
+                    <img src="/img/img_avatar.png" alt="Avatar" style="width:100%">
+                    <div class="container">
+                        <h4><b>محمود ابوالنجا</b></h4>
+                        <p>مهندس شبكات وبرمجيات</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="cardservice">
+                    <img src="/img/img_avatar.png" alt="Avatar" style="width:100%">
+                    <div class="container">
+                        <h4><b>محمود ابوالنجا</b></h4>
+                        <p>مهندس شبكات وبرمجيات</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+   
+
+
+</div>
+<!-------------------End MimberShip---------------------->
+
+<div class="container">
+    <div style="text-align:center">
+        <h2>تواصل معنا</h2>
+        <p>يمكنك التواصل معنا على ان يتم الرد عليك خلال 24 ساعة</p>
+    </div>
+    <div class="row">
+
+        <div class="column">
+            <form action="/action_page.php">
+                <label for="fname">الأسم الاول</label>
+                <input type="text" id="fname" name="firstname" placeholder="الأسم الأول ..">
+                <label for="lname">الأسم الاخير</label>
+                <input type="text" id="lname" name="lastname" placeholder="الأسم الأخير..">
+                <label for="country">المحافظة</label>
+                <select id="country" name="country">
+                    <option value="Egypt">القاهرة</option>
+                    <option value="Beni Suef">بني سويف</option>
+                    <option value="Fayoum">الفيوم</option>
+                    <option value="Minia">المنيا</option>
+
+                </select>
+                <label for="subject">الموضوع</label>
+                <textarea id="subject" name="subject" placeholder="أكتب شيئا..." style="height:170px"></textarea>
+                <input type="submit" value="إرسال">
+            </form>
+        </div>
+        <div class="column">
+            <img src="/img/img_avatar.png" style="width:80%">
+        </div>
+    </div>
+</div>
+<!-- Footer -->
+<img src="/img/bgg/bgg6.png" style="position:absolute; z-index:-55;height:80%;width: 100%;" />
+
+<footer class="page-footer font-small unique-color-dark">
+
+    <div style="background-color: #0d3e57;">
+        <div class="container">
+
+            <!-- Grid row-->
+            <div class="row py-4 d-flex align-items-center">
+
+                <!-- Grid column -->
+                <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+                    <h6 class="mb-0">تواصل معنا على مواقع التواصل الإجتماعي</h6>
+                </div>
+                <!-- Grid column -->
+                <!-- Grid column -->
+                <div class="social col-md-6 col-lg-7 text-center text-md-right">
+
+                    <!-- Facebook -->
+                    <a class="fb-ic">
+                        <i class="fa fa-facebook-official white-text mr-4"> </i>
+                    </a>
+                    <!-- Twitter -->
+                    <a class="tw-ic">
+                        <i class="fa fa-twitter white-text mr-4"> </i>
+                    </a>
+                    <!-- Google +-->
+                    <a class="gplus-ic">
+                        <i class="fa fa-google-plus white-text mr-4"> </i>
+                    </a>
+                    <!--Linkedin -->
+                    <a class="li-ic">
+                        <i class="fa fa-linkedin white-text mr-4"> </i>
+                    </a>
+                    <!--Instagram-->
+                    <a class="ins-ic">
+                        <i class="fa fa-instagram white-text"> </i>
+                    </a>
+
+                </div>
+                <!-- Grid column -->
+
+            </div>
+            <!-- Grid row-->
+
+        </div>
+    </div>
+    <!-- Footer Links -->
+    <div class="container-fluid text-center text-md-left mt-5">
+
+        <!-- Grid row -->
+        <div class="row mt-3" style="margin: 0 !important;">
+
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+
+                <!-- Content -->
+                <h6 class="content text-uppercase font-weight-bold">المجلس الاستشاري</h6>
+                <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                <p class="contentP">
+                    أشار المحافظ إلى أن المجلس سيختص بتقديم المشورة فى أطر تخطيطية محددة للمعاونة فى تحقيق نقلة نوعية للمحافظة، ودراسة وإبداء الرأى فى الموضوعات التى تعرض على المجلس و متابعة الملفات التى يتم إسنادها إليهم، والمشاركة فى وضع الخطط التنموية داخل المحافظة من وجهة نظر الشباب ،وتقديم المقترحات اللازمة للارتقاء بمستوى الخدمات المقدمة للمواطن فى كافة المجالات
+                </p>
+
+            </div>
+            <!-- Grid column -->
+            <!-- Grid column -->
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+
+                <!-- Links -->
+                <h6 class="content text-uppercase font-weight-bold">المحاور / الخدمات</h6>
+                <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                <p class="contentP">
+                    <a href="#!">محور التحول الرقمي</a>
+                </p>
+                <p class="contentP">
+                    <a href="#!">المحور الاقتصادي</a>
+                </p>
+                <p class="contentP">
+                    <a href="#!">محور التنمية المحلية</a>
+                </p>
+                <p class="contentP">
+                    <a href="#!">محور العمل العام</a>
+                </p>
+
+            </div>
+            <!-- Grid column -->
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+
+                <!-- Links -->
+                <h6 class="content text-uppercase font-weight-bold">لينكات تهمك</h6>
+                <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                <p class="contentP">
+                    <a href="#!">www.codernaga.com</a>
+                </p>
+                <p class="contentP">
+                    <a href="#!">www.benisuef.gov.eg</a>
+                </p>
+                <p class="contentP">
+                    <a href="#!"></a>
+                </p>
+                <p class="contentP">
+                    <a href="#!">h.oda@hotmail.com</a>
+                </p>
+
+            </div>
+            <!-- Grid column -->
+            <!-- Grid column -->
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+
+                <!-- Links -->
+                <h6 class="content text-uppercase font-weight-bold">تواصل معنا</h6>
+                <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                <p class="contentP">
+                    <i class="fa fa-home mr-3"></i>بني سويف / كورنيش النيل
+                </p>
+                <p class="contentP">
+                    <i class="fa fa-envelope mr-3"></i> h.oda@hotmail.com
+                </p>
+                <p class="contentP">
+                    <i class="fa fa-phone mr-3"></i> + 01090102430
+                </p>
+                <p class="contentP">
+                    <i class="fa fa-print mr-3"></i> + 01125003232
+                </p>
+
+            </div>
+            <!-- Grid column -->
+
+        </div>
+        <!-- Grid row -->
+
+    </div>
+    <!-- Footer Links -->
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">
+        © 2020 حقوق التصميم:
+        <a href="https://www.linkedin.com/in/mahmoudabolnaga/"> www.codernaga.com</a>
+    </div>
+    <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
